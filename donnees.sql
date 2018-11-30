@@ -64,12 +64,16 @@ insert into COMMENTER values (2 , 'ecollignon' , ' Les Bonjour, la signature et 
 insert into COMMENTER values (3 , 'abrama' , 'Je tiens à préciser que ce genre de choses ne m\'arrive que quand je fais des crises de somnanbulisme donc faites pas les bâtards');
 insert into COMMENTER values (4 , 'arolin' , 'On dirait moi avec Thierry Bécaro mdr ^^ ' );
 
+commit;
+
 --COTISER
 
 insert into COTISER values ( 'msamili' , 'EIRBWARE', 12-NOV-17 );
 insert into COTISER values ( 'jbure' , 'EMK' , 15-OCT-17 );
 insert into COTISER values ('ggaudre' , 'BDS' , 6-SEP-17 );
 insert into COTISER values ( 'psedon' , 'Ligue des maitres de l\'espace et du temps' , 15-DEC-50);
+
+commit;
 
 --ASSOCIATIONS
 
@@ -79,6 +83,8 @@ insert into ASSOCIATIONS values ( 'EIRBWARE' , 'Manger des bites enfermé dans u
 insert into ASSOCIATIONS values ( 'INGENIB' , 'Brasser un max de thunes pour tout claquer dans le trou du BAR' , 0);
 insert into ASSOCIATIONS values ( 'PIX\'EIRB' , 'Prendre des photos dossiers' , 5 );
 
+commit;
+
 --NEWS
 
 insert into NEWS values (ID_NEWS_SEQ , 'Un excellent gouter !', 'Ce vendredi 23 novembre au Bar de l\'ENSEIRB-MATMECA, j\'ai dégusté un bon gouter composé d\'un adorable kitkat acommpagné d\'un délicieux café noir' , 23-NOV-18 , 'Le BAR de l\'ENSEIRB-MATMECA'  );
@@ -86,12 +92,16 @@ insert into NEWS values (ID_NEWS_SEQ , 'P Sedon dans le futur', 'JOURNAL DE BORD
 insert into NEWS values (ID_NEWS_SEQ , 'Incroyable : Lola perd ses dents en pleine représentation ! ', 'Journaliste : Bonjour Lola que s\'est-il passé?    Lola : Je ne chais pas cheu qu\'il ch\'est paché, j\'ai du glisser sur la flaque de piche d\'Archur, il a du vouloir éviter chon P Ché ! ' , 24-OCT-18 , 'EMK'  );
 insert into NEWS values (ID_NEWS_SEQ , 'Ode au mec qui passe la cireuse', ' Ô toi l\'homme le plus brillant de l\'école, toi qui brille et rend brillant, toi qui lutte contre l\'inertie implacable de la rotation des disques de feutre, toi qui porte en rebelle ton polo trop large, comme un OG digne du prince Xzibit. Tu rends nos vie plus groovy en nous laissant libres, glissant sur la brillance de nos beaux parquets. PEACE  ' , 4-JUL-14 , 'Bruno'  );
 
+commit;
+
 --RESPONSABLES
 
 insert into RESPONSABLES values ('Ligue des maitres de l\'espace et du temps' , 'Gourou suprême' , 'psedon');
 insert into RESPONSABLES values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Biero ASKIP' , 'gfontaine');
 insert into RESPONSABLES values ('Chibr\'eirb' , 'Respo con' , 'lsonet' );
 insert into RESPONSABLES values ('BDS' , 'Respo Sécu' , 'helmalaki');
+
+commit;
 
 --GERER
 
@@ -101,3 +111,5 @@ insert into GERER values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Respo Soirée');
 insert into GERER values ('Solid\'eirb', 'Trésorier');
 insert into GERER values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Biero Askip');
 insert into GERER values ('BDE' , 'Vice-président');
+
+commit;
