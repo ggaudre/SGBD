@@ -42,6 +42,7 @@ commit;
 insert into PARTICIPER (2, 1, 2, 'J\'en ai pris plein la vue, merci Jacquie et Mich\'eirb', 9);
 insert into PARTICIPER (1, 8, 8, 'Le prix ça fait mal au cul !!', 2);
 
+commit;
 
 -- EVENEMENTS
 
@@ -50,13 +51,30 @@ insert into EVENEMENTS (ID_EVENT_SEQ, 'BARTOUTATISE', 'Soirée organisée par la
 
 commit;
 
+
 -- SOURCES_FINANCEMENT
 
-insert into SOURCES_FINANCEMENT
+insert into SOURCES_FINANCEMENT(ID_FIN_SEQ, 'ENTREPRISE', 'THALES');
+insert into SOURCES_FINANCEMENT(ID_FIN_SEQ, 'PRIVEE', 'DUVIVIER');
+insert into SOURCES_FINANCEMENT(ID_FIN_SEQ, 'ETAT', 'MINISTÈRE DE LA RECHERCHE ET DE L\'ENSEIGNEMENT SUPÉRIEUR');
+
+commit;
+
+-- ADHERENTS
+
+insert into ADHERENTS('msalimi', 'msalimi@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_msalimi', 3);
+insert into ADHERENTS('ggaudre', 'ggaudre@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_ggaudre', 2);
+insert into ADHERENTS('jbure', 'jbure@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_jbure', 1);*
+
+commit;
 
 
+-- FINANCER
+insert into FINANCER(1, 'INGENIB', 10000);
+insert into FINANCER(2, 'BDE', 300);
+insert into FINANCER(3, 'EIRBWARE', 1000);
 
-
+commit;  
 
 insert into COMMENTER values (1 , 'jbure' , 'Moi aussi j\'adore les kitkats ! J\'adore aussi prendre un petit minute maid avant la sodo '    );
 insert into COMMENTER values (2 , 'msalimi' , 'Wahou !' );

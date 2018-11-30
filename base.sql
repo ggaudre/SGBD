@@ -68,12 +68,12 @@ create table SOURCES_FINANCEMENT
 
 create table ADHERENTS
 (
-    LOGIN_ADHERENT     VARCHAR2(40)        not null                ,
+    LOGIN_ADHERENT     VARCHAR2(40)         not null                ,
     ADRESSE_MAIL        VARCHAR2(100)       not null                ,
     FILIERE             VARCHAR2(17) check (FILIERE in ('INFORMATIQUE', 'ELECTRONIQUE', 'TELECOMMUNICATION', 'MATMECA', 'RSI', 'SEE'))  not null ,
-    PROMOTION           VARCHAR2(2) check (PROMOTION in ('1A', '2A', '3A')) not null      ,
+    PROMOTION           INT(4)              not null      ,
     MDP                 VARCHAR2(100)       not null                ,
-    ID_PERS             NUMBER(5)       not null                ,
+    ID_PERS             NUMBER(5)           not null                ,
     constraint pk_adh primary key (LOGIN_ADHERENT)
 );
 
