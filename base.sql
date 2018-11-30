@@ -155,3 +155,11 @@ create sequence ID_FIN_SEQ
   start with 1
   increment by 1
   cache 20;
+
+
+create sequence ID_NEWS_SEQ
+  minvalue 1
+  maxvalue 99999
+  start with 1
+  increment by 1
+  cache 20;

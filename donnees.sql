@@ -86,3 +86,8 @@ insert into RESPONSABLES values ('Chibr\'eirb' , 'Respo con' , 'lsonet' );
 insert into RESPONSABLES values ('BDS' , 'Respo Sécu' , 'helmalaki');
 
 insert into GERER values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Président');
+insert into GERER values ('BDE' , 'Président');
+insert into GERER values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Respo Soirée');
+insert into GERER values ('Solid\'eirb', 'Trésorier');
+insert into GERER values ('Le BAR de l\'ENSEIRB-MATMECA' , 'Biero Askip');
+insert into GERER values ('BDE' , 'Vice-président');
