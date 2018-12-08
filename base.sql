@@ -49,7 +49,7 @@ create table EVENEMENTS
     COUT                NUMBER(6)           DEFAULT 0               ,
     LIEU                VARCHAR2(1000)      not null                ,
     TARIF_ADHERENT      NUMBER(3)           DEFAULT 0               ,
-    TARIF_EXTE          NUMBER(3)           DEFAULT 0               ,
+    TARIF_EXTE      NUMBER(3)           DEFAULT 0               ,
     NB_PLACE            NUMBER(6)           DEFAULT 0               ,
     DATE_DEBUT          DATE                not null                ,
     DATE_FIN            DATE                not null                ,
@@ -166,7 +166,7 @@ create sequence ID_NEWS_SEQ
   increment by 1
   cache 20;
 
-create sequence ID_FIN_SEQ
+create sequence ID_RESPO_SEQ
   minvalue 1
   maxvalue 99999
   start with 1
