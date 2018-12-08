@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>Personnes</span> (
+    <span class='primary'>id_pers</span>,
+    <span class='normal'>nom_pers</span>,
+    <span class='normal'>prénom_pers</span>
+  )
+</div>
+<div>
+  <span class='relation'>Participer</span> (
+    <span class='foreign primary'>id_event</span>,
+    <span class='foreign primary'>id_pers</span>,
+    <span class='normal'>commentaire</span>,
+    <span class='normal'>note</span>
+  )
+</div>
+<div>
+  <span class='relation'>Événements</span> (
+    <span class='primary'>id_event</span>,
+    <span class='normal'>titre_event</span>,
+    <span class='normal'>description</span>,
+    <span class='normal'>date création</span>,
+    <span class='normal'>coût</span>,
+    <span class='normal'>lieu</span>,
+    <span class='normal'>nb place</span>,
+    <span class='normal'>date début</span>,
+    <span class='normal'>date fin</span>,
+    <span class='normal'>tarif exté</span>,
+    <span class='normal'>tarif adhérent</span>,
+    <span class='normal'>fréquence</span>
+  )
+</div>
+<div>
+  <span class='relation'>Sources de financement</span> (
+    <span class='primary'>id_fin</span>,
+    <span class='normal'>type</span>,
+    <span class='normal'>nom_fin</span>
+  )
+</div>
+<div>
+  <span class='relation'>Adhérents</span> (
+    <span class='primary'>login</span>,
+    <span class='normal'>adresse mail</span>,
+    <span class='normal'>filière</span>,
+    <span class='normal'>promotion</span>,
+    <span class='normal'>mdp</span>,
+    <span class='foreign'>id_pers</span>
+  )
+</div>
+<div>
+  <span class='relation'>Organiser</span> (
+    <span class='foreign primary'>id_event</span>,
+    <span class='foreign primary'>Nom_asso</span>,
+    <span class='foreign primary'>login</span>
+  )
+</div>
+<div>
+  <span class='relation'>Financer</span> (
+    <span class='foreign primary'>id_fin</span>,
+    <span class='foreign primary'>Nom_asso</span>,
+    <span class='normal'>Somme</span>
+  )
+</div>
+<div>
+  <span class='relation'>Commenter</span> (
+    <span class='foreign primary'>id_news</span>,
+    <span class='foreign primary'>login</span>,
+    <span class='normal'>commentaire</span>
+  )
+</div>
+<div>
+  <span class='relation'>Cotiser</span> (
+    <span class='foreign primary'>login</span>,
+    <span class='foreign primary'>Nom_asso</span>,
+    <span class='normal'>Date_cotisation</span>
+  )
+</div>
+<div>
+  <span class='relation'>Associations</span> (
+    <span class='primary'>Nom_asso</span>,
+    <span class='normal'>objectif</span>,
+    <span class='normal'>montant cotisation</span>
+  )
+</div>
+<div>
+  <span class='relation'>News</span> (
+    <span class='primary'>id_news</span>,
+    <span class='normal'>titre_news</span>,
+    <span class='normal'>texte</span>,
+    <span class='normal'>date création</span>,
+    <span class='foreign'>id_responsable</span>
+  )
+</div>
+<div>
+  <span class='relation'>Responsables</span> (
+    <span class='primary'>id_responsable</span>,
+    <span class='normal'>Fonction</span>,
+    <span class='foreign'>login</span>,
+    <span class='foreign'>Nom_asso</span>
+  )
+</div>
+</div>
+</body>
+</html>

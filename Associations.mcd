@@ -1,0 +1,19 @@
+Personnes: id_pers, nom_pers, prénom_pers
+Participer, ON Événements, ON Personnes: commentaire, note
+Événements: id_event, titre_event, description, date création, coût, lieu, nb place, date début, date fin, tarif exté, tarif adhérent, fréquence
+Sources de financement: id_fin, type, nom_fin
+
+Être un1, 01 Personnes, 11 Adhérents
+Adhérents: login, adresse mail, filière, promotion, mdp
+Organiser, 1N Événements, 0N Associations, 0N Adhérents
+Financer, ON Sources de financement, ON Associations: Somme
+
+Commenter, 0N News, ON Adhérents : commentaire
+Être un responable, 0N Adhérents, 11 Responsables
+Cotiser, 1N Adhérents, 1N Associations: Date_cotisation
+Associations: Nom_asso, objectif, montant cotisation
+
+News: id_news, titre_news, texte, date création
+Poster,  11 News, 0N Responsables
+Responsables:  id_responsable, Fonction
+Gérer, 1N Associations, 11 Responsables
