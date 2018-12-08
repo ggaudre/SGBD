@@ -1,0 +1,35 @@
+%%mocodo
+:
+Personnes: id_pers, nom_pers, prénom_pers
+:
+Participer: #id_event->Événements->id_event, _#id_pers->Personnes->id_pers, commentaire, note
+:
+Événements: id_event, titre_event, description, date création, coût, lieu, nb place, date début, date fin, tarif exté, tarif adhérent, fréquence
+:
+Sources de financement: id_fin, type, nom_fin
+:
+
+
+:::
+Adhérents: login, adresse mail, filière, promotion, mdp, #id_pers->Personnes->id_pers
+:
+Organiser: #id_event->Événements->id_event, _#Nom_asso->Associations->Nom_asso, _#login->Adhérents->login
+:
+Financer: #id_fin->Sources de financement->id_fin, _#Nom_asso->Associations->Nom_asso, Somme
+:
+
+
+:
+Commenter: #id_news->News->id_news, _#login->Adhérents->login, contenu
+:::
+Cotiser: #login->Adhérents->login, _#Nom_asso->Associations->Nom_asso, date_cotisation
+:
+Associations: Nom_asso, objectif, montant cotisation
+:
+
+
+:
+News: id_news, titre_news, texte, date_publication, #id_responsable->Responsables->id_responsable
+:::
+Responsables: id_responsable, Fonction, #login->Adhérents->login, #Nom_asso->Associations->Nom_asso
+:::

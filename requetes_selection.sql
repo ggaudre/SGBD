@@ -1,7 +1,62 @@
 --Informations sur les associations, les adhérents, les évènements.
--- La liste des adhérents à une association à une date donnée et celle
---  des adhérents qui n'ont pas encore cotisé. La liste des personnes organisant un évènement et celles des personnes participant à cet évènement.
---   Pour une news, on veut savoir le nombre de commentaires qui ont été postés.
 
-SELECT *
+-- LISTE DES ASSOS
+SELECT NOM_ASSO
 FROM ASSOCIATIONS
+ORDER BY NOM_ASSO;
+
+-- LISTE DES EVENEMENTS A VENIR
+SELECT TITRE_EVENT, LIEU, DATE_DEBUT, NOM_ASSO, LOGIN_ORGANISATEUR
+FROM EVENEMENTS
+WHERE DATE_DEBUT >= CURDATE()
+ORDER BY DATE_DEBUT ASC;
+
+-- LISTE DU BUREAU D'UNE ASSO
+SELECT FONCTION, NOM_PERS, PRENOM_PERS
+FROM RESPONSABLES JOIN ADHERENTS ON RESPONSABLES.LOGIN_ADHERENT = ADHERENTS.LOGIN_ADHERENT JOIN PERSONNES ON PERSONNES.ID_PERS=ADHERENTS.ID_PERS
+WHERE NOM_ASSO = "BDE";
+
+-- LISTE DES COMMENTAIRES DUN EVENEMENT
+SELECT COMMENTAIRE_EVENT
+FROM PARTICIPER
+WHERE ID_EVENT = 1;
+
+-- LISTE DES NEWS DUNE ASSOCIATION
+SELECT TITRE_NEWS, DATE_CREATION, TEXTE
+FROM NEWS
+WHERE NOM_ASSO = "BDE"
+ORDER BY DATE_CREATION DESC;
+
+-- LISTE DES COMMENTAIRES DUNE NEWS
+SELECT LOGIN_ADHERENT, COMMENTAIRE_NEWS
+FROM COMMENTER
+WHERE ID_NEWS = 1;
+
+-- LISTE DES DERNIERES NEWS
+SELECT TITRE_NEWS, NOM_ASSO, DATE_CREATION, TEXTE
+FROM NEWS
+ORDER BY DATE_CREATION DESC;
+
+
+--La liste des adhérents à une association à une date donnée
+SELECT LOGIN_ADHERENT
+FROM COTISER
+WHERE NOM_ASSO= "BDE" AND DATE_INSCRIPTION <= 12-NOV-17 ;
+-- et celle des adhérents qui n'ont pas encore cotisé.
+SELECT LOGIN_ADHERENT
+FROM COTISER
+WHERE NOM_ASSO= "BDE" AND DATE_INSCRIPTION = NULL ;
+
+-- La liste des personnes organisant un évènement
+SELECT LOGIN_ORGANISATEUR
+FROM EVENEMENTS
+WHERE ID_EVENT = 1;
+-- et celles des personnes participant à cet évènement.
+SELECT ID_PERS
+FROM PARTICIPER
+WHERE ID_EVENT = 1;
+
+--   Pour une news, on veut savoir le nombre de commentaires qui ont été postés.
+SELECT COUNT(*)
+FROM COMMENTER
+WHERE ID_NEWS = 1;
