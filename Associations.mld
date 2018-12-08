@@ -20,16 +20,16 @@ Financer: #id_fin->Sources de financement->id_fin, _#Nom_asso->Associations->Nom
 
 
 :
-Commenter: #id_news->News->id_news, _#login->Adhérents->login, commentaire
+Commenter: #id_news->News->id_news, _#login->Adhérents->login, contenu
 :::
-Cotiser: #login->Adhérents->login, _#Nom_asso->Associations->Nom_asso, Date_cotisation
+Cotiser: #login->Adhérents->login, _#Nom_asso->Associations->Nom_asso, date_cotisation
 :
 Associations: Nom_asso, objectif, montant cotisation
 :
 
 
 :
-News: id_news, titre_news, texte, date création, #id_responsable->Responsables->id_responsable
+News: id_news, titre_news, texte, date_publication, #id_responsable->Responsables->id_responsable
 :::
 Responsables: id_responsable, Fonction, #login->Adhérents->login, #Nom_asso->Associations->Nom_asso
 :::

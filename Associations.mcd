@@ -8,12 +8,12 @@ Adhérents: login, adresse mail, filière, promotion, mdp
 Organiser, 1N Événements, 0N Associations, 0N Adhérents
 Financer, ON Sources de financement, ON Associations: Somme
 
-Commenter, 0N News, ON Adhérents : commentaire
+Commenter, 0N News, ON Adhérents : contenu
 Être un responable, 0N Adhérents, 11 Responsables
-Cotiser, 1N Adhérents, 1N Associations: Date_cotisation
+Cotiser, 1N Adhérents, 1N Associations: date_cotisation
 Associations: Nom_asso, objectif, montant cotisation
 
-News: id_news, titre_news, texte, date création
+News: id_news, titre_news, texte, date_publication
 Poster,  11 News, 0N Responsables
 Responsables:  id_responsable, Fonction
 Gérer, 1N Associations, 11 Responsables
