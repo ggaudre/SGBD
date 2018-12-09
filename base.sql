@@ -139,38 +139,39 @@ create table ORGANISER
 
 
 
+
 create sequence ID_PERS_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_EVENT_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_FIN_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 
 create sequence ID_NEWS_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_RESPO_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
