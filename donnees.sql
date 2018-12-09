@@ -33,7 +33,10 @@ insert into PERSONNES (ID_PERS_SEQ.nextval, 'PERIS', 'SARAH');
 insert into PERSONNES (ID_PERS_SEQ.nextval, 'SONET', 'LUCA');
 insert into PERSONNES (ID_PERS_SEQ.nextval, 'LEE SHAO SHIT', 'TÉRENCE');
 insert into PERSONNES (ID_PERS_SEQ.nextval, 'ROYANT', 'YANN');
-
+insert into PERSONNES (ID_PERS_SEQ.nextval, 'ACOSTA', 'ANTHONY');
+insert into PERSONNES (ID_PERS_SEQ.nextval, 'GARCIA--MEIRELES', 'JORDAN');
+insert into PERSONNES (ID_PERS_SEQ.nextval, 'RICHARD', 'ANTOINE');
+insert into PERSONNES (ID_PERS_SEQ.nextval, '', 'YANN');
 commit;
 
 
