@@ -47,7 +47,7 @@ commit;
 -- EVENEMENTS
 
 insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, 'GALA', 'GALA organisé pour célébrer le diplôme des 4A', '24-NOV-18', 55000, 'Chateau Lafitte', 15, 15, 500, '24-NOV-18', '24-NOV-18', NULL);
-insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, 'BARTOUTATISE', 'Soirée organisée par la Cafétéria de l''ENSEIRB-MATMECA', '7-NOV-18', 100, 'Cafétéria de l''école', 0, 0, 400, '7-NOV-18', '7-NOV-18', NULL);
+insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, 'BARTOUTATISE', 'Soirée organisée par la Cafétéria de l''ENSEIRB-MATMECA', '27-DEC-18', 100, 'Cafétéria de l''école', 0, 0, 400, '27-DEC-18', '27-DEC-18', NULL);
 
 commit;
 
@@ -73,6 +73,7 @@ commit;
 insert into FINANCER values (1, 'INGENIB', 10000);
 insert into FINANCER values (2, 'BDE', 300);
 insert into FINANCER values (3, 'EIRBWARE', 1000);
+insert into FINANCER values (2, 'EIRBWARE', 1100);
 
 commit;
 
