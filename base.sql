@@ -20,6 +20,8 @@ drop table ORGANISER cascade constraints;
 drop sequence ID_PERS_SEQ;
 drop sequence ID_EVENT_SEQ;
 drop sequence ID_FIN_SEQ;
+drop sequence ID_NEWS_SEQ;
+drop sequence ID_RESPO_SEQ;
 -- ============================================================
 --   Table : PERSONNES
 -- ============================================================
@@ -79,7 +81,7 @@ create table ADHERENTS
 create table FINANCER
 (
     ID_FIN              NUMBER(5)           not null                ,
-    NOM_ASSO            VARCHAR2(40)        not null                ,
+    NOM_ASSO            VARCHAR2(100)        not null                ,
     SOMME               NUMBER(6)           DEFAULT 0               ,
     constraint pk_fin primary key (ID_FIN, NOM_ASSO)
 );
@@ -89,20 +91,20 @@ create table COMMENTER
     ID_NEWS               NUMBER(5)         not null                ,
     LOGIN_ADHERENT        VARCHAR2(40)      not null                ,
     COMMENTAIRE_NEWS      VARCHAR2(280)                             ,
-    constraint pk_com primary key (ID_NEWS)
+    constraint pk_com primary key (ID_NEWS, LOGIN_ADHERENT)
 );
 
 create table COTISER
 (
     LOGIN_ADHERENT        VARCHAR2(40)      not null                ,
-    NOM_ASSO              VARCHAR2(40)      not null                ,
+    NOM_ASSO              VARCHAR2(100)     not null                ,
     DATE_INSCRIPTION      DATE              not null                ,
     constraint pk_cot primary key (LOGIN_ADHERENT, NOM_ASSO)
 );
 
 create table ASSOCIATIONS
 (
-    NOM_ASSO              VARCHAR2(40)       not null                ,
+    NOM_ASSO              VARCHAR2(100)       not null                ,
     OBJECTIF              VARCHAR2(280)      not null                ,
     MONTANT_COTISATION    NUMBER(6)          DEFAULT 0               ,
     constraint pk_asso primary key (NOM_ASSO)
@@ -111,7 +113,7 @@ create table ASSOCIATIONS
 create table NEWS
 (
     ID_NEWS               NUMBER(5)          not null               ,
-    TITRE_NEWS            VARCHAR2(40)       not null               ,
+    TITRE_NEWS            VARCHAR2(1000)       not null               ,
     TEXTE                 VARCHAR2(1000)     not null               ,
     DATE_CREATION         DATE               not null               ,
     ID_RESPO              NUMBER(5)          not null               ,
@@ -123,52 +125,53 @@ create table RESPONSABLES
     ID_RESPO              NUMBER(5)         not null                ,
     FONCTION              VARCHAR2(60)      not null                ,
     LOGIN_ADHERENT        VARCHAR2(40)      not null                ,
-    NOM_ASSO              VARCHAR2(40)      not null                ,
+    NOM_ASSO              VARCHAR2(100)      not null                ,
     constraint pk_respo primary key (ID_RESPO)
 );
 
 create table ORGANISER
 (
     ID_EVENT              NUMBER(5)         not null                ,
-    NOM_ASSO              VARCHAR2(40)      not null                ,
+    NOM_ASSO              VARCHAR2(100)      not null                ,
     LOGIN_ADHERENT        VARCHAR2(40)      not null                ,
     constraint pk_orga primary key (ID_EVENT, NOM_ASSO, LOGIN_ADHERENT)
 );
 
 
 
+
 create sequence ID_PERS_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_EVENT_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_FIN_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 
 create sequence ID_NEWS_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
 
 create sequence ID_RESPO_SEQ
-  minvalue 1
+  minvalue 0
   maxvalue 99999
-  start with 1
+  start with 0
   increment by 1
   cache 20;
