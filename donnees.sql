@@ -47,6 +47,7 @@ insert into PARTICIPER values (1, 8, 'Le prix ca fait mal au cul !!', 2);
 
 commit;
 
+
 -- EVENEMENTS
 
 insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, 'GALA', 'GALA organisé pour célébrer le diplôme des 4A', '24-NOV-18', 55000, 'Chateau Lafitte', 15, 15, 500, '24-NOV-18', '24-NOV-18', NULL);
@@ -62,6 +63,7 @@ insert into SOURCES_FINANCEMENT values (ID_FIN_SEQ.nextval, 'PRIVEE', 'DUVIVIER'
 insert into SOURCES_FINANCEMENT values (ID_FIN_SEQ.nextval, 'ETAT', 'MINISTÈRE DE LA RECHERCHE ET DE L''ENSEIGNEMENT SUPÉRIEUR');
 
 commit;
+
 
 -- ADHERENTS
 
@@ -91,6 +93,7 @@ insert into COMMENTER values (4 , 'arolin' , 'On dirait moi avec Thierry Bécaro
 
 commit;
 
+
 --COTISER
 
 insert into COTISER values ( 'msamili' , 'EIRBWARE', '12-NOV-17' );
@@ -99,6 +102,7 @@ insert into COTISER values ('ggaudre' , 'BDS' , '6-SEP-17' );
 insert into COTISER values ( 'psedon' , 'Ligue des maitres de l''espace et du temps' , '15-DEC-50');
 
 commit;
+
 
 --ASSOCIATIONS
 
@@ -110,6 +114,7 @@ insert into ASSOCIATIONS values ( 'PIX''EIRB' , 'Prendre des photos dossiers' , 
 
 commit;
 
+
 --NEWS
 
 insert into NEWS values (ID_NEWS_SEQ.nextval , 'Un excellent gouter !', 'Ce vendredi 23 novembre au Bar de l''ENSEIRB-MATMECA, j''ai dégusté un bon gouter composé d''un adorable kitkat acommpagné d''un délicieux café noir' , '23-NOV-18' , 2 );
@@ -119,6 +124,7 @@ insert into NEWS values (ID_NEWS_SEQ.nextval , 'Ode au mec qui passe la cireuse'
 
 commit;
 
+
 --RESPONSABLES
 
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Gourou suprême' , 'psedon', 'Ligue des maitres de l''espace et du temps');
@@ -127,6 +133,7 @@ insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo con' , 'lsonet', '
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo Sécu' , 'helmalaki', 'BDS');
 
 commit;
+
 
 --ORGANISER
 
