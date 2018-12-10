@@ -33,7 +33,10 @@ insert into PERSONNES values (ID_PERS_SEQ.nextval, 'PERIS', 'SARAH');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'SONET', 'LUCA');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'LEE SHAO SHIT', 'TÉRENCE');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'ROYANT', 'YANN');
-
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'ACOSTA', 'ANTHONY');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'GARCIA--MEIRELES', 'JORDAN');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'RICHARD', 'ANTOINE');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'LOUYOT', 'EMMANUEL');
 commit;
 
 
@@ -43,6 +46,7 @@ insert into PARTICIPER values (2, 1, 'J''en ai pris plein la vue, merci Jacquie 
 insert into PARTICIPER values (1, 8, 'Le prix ca fait mal au cul !!', 2);
 
 commit;
+
 
 -- EVENEMENTS
 
@@ -59,6 +63,7 @@ insert into SOURCES_FINANCEMENT values (ID_FIN_SEQ.nextval, 'PRIVEE', 'DUVIVIER'
 insert into SOURCES_FINANCEMENT values (ID_FIN_SEQ.nextval, 'ETAT', 'MINISTÈRE DE LA RECHERCHE ET DE L''ENSEIGNEMENT SUPÉRIEUR');
 
 commit;
+
 
 -- ADHERENTS
 
@@ -88,6 +93,7 @@ insert into COMMENTER values (4 , 'arolin' , 'On dirait moi avec Thierry Bécaro
 
 commit;
 
+
 --COTISER
 
 insert into COTISER values ( 'msamili' , 'EIRBWARE', '12-NOV-17' );
@@ -96,6 +102,7 @@ insert into COTISER values ('ggaudre' , 'BDS' , '6-SEP-17' );
 insert into COTISER values ( 'psedon' , 'Ligue des maitres de l''espace et du temps' , '15-DEC-50');
 
 commit;
+
 
 --ASSOCIATIONS
 
@@ -107,6 +114,7 @@ insert into ASSOCIATIONS values ( 'PIX''EIRB' , 'Prendre des photos dossiers' , 
 
 commit;
 
+
 --NEWS
 
 insert into NEWS values (ID_NEWS_SEQ.nextval , 'Un excellent gouter !', 'Ce vendredi 23 novembre au Bar de l''ENSEIRB-MATMECA, j''ai dégusté un bon gouter composé d''un adorable kitkat acommpagné d''un délicieux café noir' , '23-NOV-18' , 2 );
@@ -116,6 +124,7 @@ insert into NEWS values (ID_NEWS_SEQ.nextval , 'Ode au mec qui passe la cireuse'
 
 commit;
 
+
 --RESPONSABLES
 
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Gourou suprême' , 'psedon', 'Ligue des maitres de l''espace et du temps');
@@ -124,6 +133,7 @@ insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo con' , 'lsonet', '
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo Sécu' , 'helmalaki', 'BDS');
 
 commit;
+
 
 --ORGANISER
 
