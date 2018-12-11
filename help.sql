@@ -7,7 +7,7 @@ PROMPT  les informations sur les adhérents d'une association à une date donné
 PROMPT  le bureau d'une association: @bureau ;
 PROMPT  la liste des commentaires à propos d'un événement: @com_event ;
 PROMPT  la liste des news d'une association: @news_asso ;
-PROMPT  la liste des commentaires d'un news: @com_news ;  
+PROMPT  la liste des commentaires d'un news: @com_news ;
 PROMPT  la liste des dernières news: @news ;
 PROMPT  la liste des organisateurs d'un événement: @orga_event ;
 PROMPT  la liste des personnes y participant: @participer ;
