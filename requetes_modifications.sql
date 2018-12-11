@@ -17,9 +17,9 @@ delete from ADHERENTS where LOGIN_ADHERENT = 'jdubois';
 
 
 -- Ajout d'un événement
-PROMT "Ajout d'un événement"
-insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, "Event", "Ceci est l'évenement ajouté", '09-NOV-2018', 4000, 'ENSEIRB-MATMECA', 3, 5, 550, '14-NOV-2018', '14-NOV-2018', NULL);
+PROMPT "Ajout d'un événement"
+insert into EVENEMENTS values (ID_EVENT_SEQ.nextval, 'Event', 'Ceci est l''évenement ajouté', '09-NOV-2018', 4000, 'ENSEIRB-MATMECA', 3, 5, 550, '14-NOV-2018', '14-NOV-2018', NULL);
 
 
 -- Ajout d'une association
-PROMT "Ajout d'une association"
+PROMPT "Ajout d'une association"
