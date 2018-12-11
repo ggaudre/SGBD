@@ -23,20 +23,24 @@ commit ;
 
 -- PERSONNES
 
-insert into PERSONNES values (ID_PERS_SEQ.nextval, 'BURÉ', 'JULIEN');
-insert into PERSONNES values (ID_PERS_SEQ.nextval, 'GAUDRÉ', 'GABIN');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'BURE', 'JULIEN');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'GAUDRE', 'GABIN');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'SALIMI', 'MEHDY');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'SEDON', 'PIERRE');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'MARTINEZ', 'AXEL');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'AGUILERA', 'AYMERIC');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'PERIS', 'SARAH');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'SONET', 'LUCA');
-insert into PERSONNES values (ID_PERS_SEQ.nextval, 'LEE SHAO SHIT', 'TÉRENCE');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'LEE SHAO SHIT', 'TERENCE');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'ROYANT', 'YANN');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'ACOSTA', 'ANTHONY');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'GARCIA--MEIRELES', 'JORDAN');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'RICHARD', 'ANTOINE');
 insert into PERSONNES values (ID_PERS_SEQ.nextval, 'LOUYOT', 'EMMANUEL');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'FONTAINE', 'GAEL');
+insert into PERSONNES values (ID_PERS_SEQ.nextval, 'EL MALAKI', 'HAMZA');
+
+
 commit;
 
 
@@ -69,8 +73,11 @@ commit;
 
 insert into ADHERENTS values ('msalimi', 'msalimi@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_msalimi', 3);
 insert into ADHERENTS values ('ggaudre', 'ggaudre@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_ggaudre', 2);
-insert into ADHERENTS values ('jbure', 'jbure@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_jbure', 1);*
-
+insert into ADHERENTS values ('jbure', 'jbure@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_jbure', 1);
+insert into ADHERENTS values ('gfontaine', 'gfontaine@enseirb-matmeca.fr', 'ELECTRONIQUE', 2020, 'mdp_gfontaine', 15);
+insert into ADHERENTS values ('psedon', 'psedon@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_psedon', 4);
+insert into ADHERENTS values ('helmalaki', 'helmalaki@enseirb-matmeca.fr', 'MATMECA', 2020, 'mdp_helmalaki', 16);
+insert into ADHERENTS values ('lsonet', 'lsonet@enseirb-matmeca.fr', 'INFORMATIQUE', 2020, 'mdp_lsonet', 8);
 commit;
 
 
@@ -111,6 +118,9 @@ insert into ASSOCIATIONS values ( 'Le BAR de l''ENSEIRB-MATMECA' , ' Être l''as
 insert into ASSOCIATIONS values ( 'EIRBWARE' , 'Manger des cornflakes enfermé dans un local entre geeks', 0);
 insert into ASSOCIATIONS values ( 'INGENIB' , 'Brasser un max de thunes pour tout claquer dans le trou du BAR' , 0);
 insert into ASSOCIATIONS values ( 'PIX''EIRB' , 'Prendre des photos dossiers' , 5 );
+insert into ASSOCIATIONS values ('EMK', 'Danser en roulant', 2);
+insert into ASSOCIATIONS values ('BDE', 'Promouvoir la vie associative', 90);
+insert into ASSOCIATIONS values ('BDS', 'Faire du sport', 60);
 
 commit;
 
@@ -129,7 +139,7 @@ commit;
 
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Gourou suprême' , 'psedon', 'Ligue des maitres de l''espace et du temps');
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Biero ASKIP' , 'gfontaine', 'Le BAR de l''ENSEIRB-MATMECA');
-insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo con' , 'lsonet', 'Chibr''eirb');
+insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo con' , 'lsonet', 'Chil''eirb');
 insert into RESPONSABLES values (ID_RESPO_SEQ.nextval, 'Respo Sécu' , 'helmalaki', 'BDS');
 
 commit;
