@@ -2,5 +2,4 @@ PROMPT "Table présentes : PERSONNES, PARTICIPER, EVENEMENTS, SOURCES_FINANCEMEN
 ACCEPT table PROMPT "Quelle table voulez-vous choisir ?"
 DESCRIBE &table;
 ACCEPT attributs PROMPT "Quels attributs voulez-vous ? (Si il y en a plusieurs, séparer par des virgules. Ex : nom, prénom)"
-ACCEPT condition PROMPT "Avez-vous des conditions ?"
-SELECT &attributs FROM &table WHERE &condition;
+SELECT &attributs FROM &table;
