@@ -35,7 +35,7 @@ create table PERSONNES
 
 create table PARTICIPER
 (
-    ID_EV<ENT            NUMBER(5)           not null                ,
+    ID_EVENT            NUMBER(5)           not null                ,
     ID_PERS             NUMBER(5)           not null                ,
     COMMENTAIRE_EVENT   VARCHAR2(280)                               ,
     NOTE                NUMBER(1)                                   ,

@@ -1,0 +1,6 @@
+SELECT TITRE_NEWS from NEWS;
+prompt "De quelle news voulez vous les commentaires ?"
+accept s
+SELECT LOGIN_ADHERENT, COMMENTAIRE_NEWS
+FROM COMMENTER join NEWS on COMMENTER.ID_NEWS = NEWS.ID_NEWS
+WHERE TITRE_NEWS = &s;
