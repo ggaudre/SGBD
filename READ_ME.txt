@@ -2,12 +2,9 @@ Bonjour,
 
 Vous trouverez dans ce READ_ME l'ensemble des instructions permettant de faire fonctionner notre base de données de gestion des associations.
 
-Avant de pouvoir consulter notre base de données il faut se connecter à la machine Oracle. Si vous travaillez depuis votre ordinateur portable vous devez au préalable vous connecter en ssh au réseau de l'ENSEIRB-MATMECA  via :
-
-    ssh login@ssh.enseirb-matmeca.fr
 
 
-Connectez vous ensuite à la machine Oracle avant de définir les variables d'environnement nécessaires à l'utilisation de la base de données  via :
+Connectez vous à la machine Oracle avant de définir les variables d'environnement nécessaires à l'utilisation de la base de données  via :
 
     ssh oracle
     export PATH=$PATH:/home/oracle/app/oracle/product/11.2.0/dbhome_1/bin
