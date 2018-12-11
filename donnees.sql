@@ -42,8 +42,8 @@ commit;
 
 -- PARTICIPER
 
-insert into PARTICIPER values (2, 1, 'J''en ai pris plein la vue, merci Jacquie et Mich''eirb', 9);
-insert into PARTICIPER values (1, 8, 'Le prix ca fait mal au cul !!', 2);
+insert into PARTICIPER values (2, 1, 'J''en ai pris plein la vue, merci les amigos', 9);
+insert into PARTICIPER values (1, 8, 'Le prix ca fait mal au portefeuille !!', 2);
 
 commit;
 
@@ -85,10 +85,10 @@ commit;
 
 -- COMMENTER
 
-insert into COMMENTER values (1 , 'jbure' , 'Moi aussi j''adore les kitkats ! J''adore aussi prendre un petit minute maid avant la sodo '    );
+insert into COMMENTER values (1 , 'jbure' , 'Moi aussi j''adore les kitkats ! J''adore aussi prendre un petit minute maid avant l''anglais '    );
 insert into COMMENTER values (2 , 'msalimi' , 'Wahou !' );
 insert into COMMENTER values (2 , 'ecollignon' , ' Les Bonjour, la signature et les PS c''est pour les chiens?');
-insert into COMMENTER values (3 , 'abrama' , 'Je tiens à préciser que ce genre de choses ne m''arrive que quand je fais des crises de somnanbulisme donc faites pas les bâtards');
+insert into COMMENTER values (3 , 'abrama' , 'Je tiens à préciser que ce genre de choses ne m''arrive que quand je fais des crises de somnanbulisme donc faites pas les médisants');
 insert into COMMENTER values (4 , 'arolin' , 'On dirait moi avec Thierry Bécaro mdr ^^ ' );
 
 commit;
@@ -107,8 +107,8 @@ commit;
 --ASSOCIATIONS
 
 insert into ASSOCIATIONS values ('Ligue des maitres de l''espace et du temps', 'Dominer le système solaire par la force de la connaissance' , 999999);
-insert into ASSOCIATIONS values ( 'Le BAR de l''ENSEIRB-MATMECA' , ' Être l''asso la plus fraiche de cette putain d''école', 0);
-insert into ASSOCIATIONS values ( 'EIRBWARE' , 'Manger des bites enfermé dans un local entre geeks', 0);
+insert into ASSOCIATIONS values ( 'Le BAR de l''ENSEIRB-MATMECA' , ' Être l''asso la plus fraiche de cette école', 0);
+insert into ASSOCIATIONS values ( 'EIRBWARE' , 'Manger des cornflakes enfermé dans un local entre geeks', 0);
 insert into ASSOCIATIONS values ( 'INGENIB' , 'Brasser un max de thunes pour tout claquer dans le trou du BAR' , 0);
 insert into ASSOCIATIONS values ( 'PIX''EIRB' , 'Prendre des photos dossiers' , 5 );
 
@@ -119,7 +119,7 @@ commit;
 
 insert into NEWS values (ID_NEWS_SEQ.nextval , 'Un excellent gouter !', 'Ce vendredi 23 novembre au Bar de l''ENSEIRB-MATMECA, j''ai dégusté un bon gouter composé d''un adorable kitkat acommpagné d''un délicieux café noir' , '23-NOV-18' , 2 );
 insert into NEWS values (ID_NEWS_SEQ.nextval , 'P Sedon dans le futur', 'JOURNAL DE BORD : Je suis le célèbre P Sedon, aujourd''hui je ne saurais donner la date, en effet je vous écris cette missive depuis le futur, je suis parvenu à me transporter temporellement jusqu''au dimanche de cette semaine alors que nous étions le 23, malheureusement j''ai par conséquent raté le GALA, je viens donc de perdre quinze balles pour rien, je dois avouer être dégouté, personne ne me crois et tout le monde est persuadé que je suis juste en redescente....'  , '25-NOV-18' , 1 );
-insert into NEWS values (ID_NEWS_SEQ.nextval , 'Incroyable : Lola perd ses dents en pleine représentation ! ', 'Journaliste : Bonjour Lola que s''est-il passé?    Lola : Je ne chais pas cheu qu''il ch''est paché, j''ai du glisser sur la flaque de piche d''Archur, il a du vouloir éviter chon P Ché ! ' , '24-OCT-18' , 3 );
+insert into NEWS values (ID_NEWS_SEQ.nextval , 'Incroyable : Lola perd ses dents en pleine représentation ! ', 'Journaliste : Bonjour Lola que s''est-il passé?    Lola : Je ne chais pas cheu qu''il ch''est paché, j''ai du glisser sur la flaque jus d''orange d''Archur, il a du vouloir éviter chon P Ché ! ' , '24-OCT-18' , 3 );
 insert into NEWS values (ID_NEWS_SEQ.nextval , 'Ode au mec qui passe la cireuse', ' Ô toi l''homme le plus brillant de l''école, toi qui brille et rend brillant, toi qui lutte contre l''inertie implacable de la rotation des disques de feutre, toi qui porte en rebelle ton polo trop large, comme un OG digne du prince Xzibit. Tu rends nos vie plus groovy en nous laissant libres, glissant sur la brillance de nos beaux parquets. PEACE  ' , '4-JUL-14' , 5 );
 
 commit;
