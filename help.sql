@@ -10,6 +10,7 @@ PROMPT "la liste des dernières news: @news";
 PROMPT "la liste des organisateurs d'un événement: @orga_event";
 PROMPT "la liste des personnes y participant: @participer";
 PROMPT "le nombre de commentaires postés pour une news: @com_news";
+PROMT 
 PROMPT "Requêtes statistiques:";
 PROMPT "Pour afficher:";
 PROMPT "la moyenne du nombre de commentaires donnés par chaque adhérent pour une news: @nb_com";

@@ -1,0 +1,5 @@
+--classement des adhérents participant le plus aux évènements
+SELECT ID_PERS, COUNT(*) AS NB_PARTICIPATION
+FROM PARTICIPER
+GROUP BY ID_PERS
+ORDER BY NB_PARTICIPATION DESC;
